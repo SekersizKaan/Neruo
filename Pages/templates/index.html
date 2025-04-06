@@ -1,0 +1,235 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yapay Zeka ile Beyin Tümörü Teşhisi</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .team-img {
+            width: 150px; 
+            height: 150px; 
+            object-fit: cover; 
+            margin: 0 auto;
+            border-radius: 50%;
+            border: 3px solid #007bff;
+        }.team-card {
+        transition: transform 0.3s ease;
+        border: none;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .team-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+        }
+        .card-header {
+            padding: 1rem;
+            font-weight: bold;
+        }
+        .team-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .feature-icon {
+            font-size: 2.5rem;
+            color: #007bff;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">NöroAI Teşhis Sistemi</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Proje Hakkında</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Özellikler</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#team">Takım</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#upload">Tespit Yap</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="bg-primary text-white text-center py-5">
+        <div class="container py-5">
+            <h1 class="display-4 fw-bold mb-4">Yapay Zeka ile Beyin Tümörü Teşhisi</h1>
+            <p class="lead fs-4">Glioma, Meningioma ve Pituitary tümörlerini yüksek doğrulukla tespit eden sistemimizle tanışın</p>
+            <a href="#upload" class="btn btn-light btn-lg mt-3">Hemen Deneyin</a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="mb-4">Proje Hakkında</h2>
+                    <p class="lead">
+                        Nörolojik görüntülemede yeni bir dönem başlatıyoruz
+                    </p>
+                    <p>
+                        Projemiz, beyin tümörlerinin teşhis sürecini iyileştirmek amacıyla geliştirilmiş yapay zeka destekli bir sistemdir. Roboflow segmentasyon modeli kullanılarak MR görüntüleri üzerindeki tümörlerin hızlı ve tutarlı bir şekilde tespit edilmesi sağlanmıştır.
+                    </p>
+                    <p>
+                        Python ve Django kullanılarak geliştirilen web platformumuz, radyologların ve sağlık çalışanlarının görüntüleri kolaylıkla yükleyip detaylı analiz sonuçlarına ulaşmasını sağlamaktadır. Sistem, Glioma, Meningioma ve Pituitary tümörlerini yüksek doğrulukla sınıflandırabilmektedir.
+                    </p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://www.uclahealth.org/sites/default/files/styles/scale_crop_1280x720/public/microsites/radiology/brain-tumor.jpg" alt="Beyin MR Görüntüsü" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Sistem Özellikleri</h2>
+            <div class="row text-center">
+                <div class="col-md-4 mb-4">
+                    <div class="feature-icon">
+                        <i class="bi bi-speedometer2"></i>
+                    </div>
+                    <h3>Hızlı Teşhis</h3>
+                    <p>Görüntülerinizi yükleyin, saniyeler içinde detaylı sonuçları görün</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="feature-icon">
+                        <i class="bi bi-clipboard2-pulse"></i>
+                    </div>
+                    <h3>Yüksek Doğruluk</h3>
+                    <p>%90'ın üzerinde doğruluk oranıyla tümör tespiti</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="feature-icon">
+                        <i class="bi bi-graph-up"></i>
+                    </div>
+                    <h3>Detaylı Analiz</h3>
+                    <p>Tümör boyutu, konumu ve türü hakkında kapsamlı rapor</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upload Section -->
+    <section id="upload" class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h2 class="text-center mb-4">Tespit Yap</h2>
+                    <div class="card shadow">
+                        <div class="card-body p-5">
+                            <form action="/upload/" method="POST" enctype="multipart/form-data" class="text-center">
+                                {% csrf_token %}
+                                <div class="mb-4">
+                                    <label for="imageUpload" class="form-label fs-5">Beyin MR Görüntüsü Yükleyin</label>
+                                    <input type="file" name="image" class="form-control form-control-lg" id="imageUpload" required accept="image/*">
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-lg px-5">Analiz Et</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Team Section -->
+<section id="team" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5">Takım</h2>
+        <div class="row justify-content-center">
+            <!-- Takım Kaptanı -->
+            <div class="col-md-4 mb-4">
+                <div class="card text-center team-card h-100">
+                    <div class="card-header bg-primary text-white">
+                        <h5 class="mb-0">Takım Kaptanı</h5>
+                    </div>
+                    <div class="card-body">
+                        <ul class="text-start list-unstyled">
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i> Proje yönetimi ve koordinasyon</li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i> Model eğitimi ve optimizasyon</li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i> Sistem mimarisi tasarımı</li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i> Web sitesinin hazırlama</li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i> Final rapor hazırlama</li>
+                            <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Sunum hazırlama</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Üye -->
+            <div class="col-md-4 mb-4">
+                <div class="card text-center team-card h-100">
+                    <div class="card-header bg-success text-white">
+                        <h5 class="mb-0">Üye</h5>
+                    </div>
+                    <div class="card-body">
+                        <ul class="text-start list-unstyled">
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Veri toplama ve düzenleme</li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> ANN modellerinin araştırılması</li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Model testleri ve validasyon</li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Dokümantasyon hazırlama</li>
+                            <li><i class="bi bi-check-circle-fill text-success me-2"></i> Sistem testleri</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Danışman -->
+            <div class="col-md-4 mb-4">
+                <div class="card text-center team-card h-100">
+                    <div class="card-header bg-info text-white">
+                        <h5 class="mb-0">Danışman</h5>
+                    </div>
+                    <div class="card-body">
+                        <ul class="text-start list-unstyled">
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-info me-2"></i> Proje rehberliği</li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-info me-2"></i> Teknik danışmanlık</li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-info me-2"></i> Model değerlendirme</li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-info me-2"></i> Sonuç analizi</li>
+                            <li><i class="bi bi-check-circle-fill text-info me-2"></i> Rapor kontrolü</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>NöroAI Teşhis Sistemi</h5>
+                    <p>Yapay zeka destekli beyin tümörü teşhis platformu</p>
+                </div>
+                <div class="col-md-6 text-end">
+                    <p>&copy; 2025 Tüm hakları saklıdır</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

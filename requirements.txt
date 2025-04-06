@@ -1,0 +1,8 @@
+django
+ultralytics
+numpy
+pillow
+gunicorn
+roboflow
+whitenoise
+supervision
