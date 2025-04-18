@@ -48,7 +48,7 @@ def process_image(image_path):
             raise ValueError("Görsel yüklenemedi")
         
         # Model tahmini yap
-        result = model.predict(image_path, confidence=40).json()
+        result = model.predict(image_path, confidence=90).json()
         
         # Supervision ile detections oluştur
         detections = sv.Detections.from_inference(result)
